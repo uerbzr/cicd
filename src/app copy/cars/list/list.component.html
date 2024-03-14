@@ -1,0 +1,21 @@
+<h1>Cars list page</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of cars">
+      <td>{{ c.id }}</td>
+      <td>{{ c.make }}</td>
+      <td>{{ c.model }}</td>
+      <td>{{ c.description }}</td>
+      <td><a routerLink="/cars/{{ c.id }}">View</a></td>
+    </tr>
+  </tbody>
+</table>

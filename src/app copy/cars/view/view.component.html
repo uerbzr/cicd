@@ -1,0 +1,7 @@
+<div *ngIf="car === null">
+  <p><strong>Car Not Available</strong></p>
+</div>
+<div *ngIf="car !== null">
+  <h1>{{ car.make }} {{ car.model }}</h1>
+  <p>{{ car.description }}</p>
+</div>
